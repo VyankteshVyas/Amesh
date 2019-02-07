@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="420dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+android:weightSum="2"
+            android:id="@+id/x1"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Party Name:"
+                android:id="@+id/pn"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/pnedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:id="@+id/x2"
+            android:layout_below="@id/x1"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Party Address:"
+                android:id="@+id/pa"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/paedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:id="@+id/x3"
+            android:layout_below="@id/x2"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/pant"
+                android:text="PAN NO.:"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/pantdit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:id="@+id/x4"
+            android:layout_below="@+id/x3"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/bant"
+                android:text="Bank Account Name:"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/bantedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:id="@+id/x5"
+            android:layout_below="@id/x4"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Bank Account No.:"
+                android:id="@+id/banot"
+
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/banotedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_below="@+id/x5"
+            android:id="@+id/x6"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Bank Name:"
+                android:id="@+id/banat"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/banatedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_below="@+id/x6"
+            android:id="@+id/x7"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/bbt"
+                android:text="Bank Branch:"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/bbtedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_below="@+id/x7"
+            android:id="@+id/x8"
+            android:layout_height="47dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ifst"
+                android:text="IFSC code:"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/ifstedit"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sharu"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Share" />
+
+    </RelativeLayout>
+
+</ScrollView>

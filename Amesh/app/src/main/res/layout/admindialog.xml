@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/roundeddialog"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/admin_id"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+
+        android:background="@drawable/roundeddialog">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Please Enter Your Secret Code"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/admvoid"
+            android:layout_width="199dp"
+            android:layout_height="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp" />
+
+        <Button
+            android:id="@+id/silmo"
+            android:layout_width="162dp"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="189dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/buttonstyle"
+            android:text="submit"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

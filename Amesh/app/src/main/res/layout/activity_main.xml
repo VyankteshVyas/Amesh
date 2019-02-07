@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/money2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="100dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="300dp"
+            android:textColorHint="@android:color/black"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:id="@+id/user_id"
+            android:hint="        ENTER UserID"
+            android:background="@drawable/edittextstyle"
+            android:layout_height="60dp" />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/passkey"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:textColorHint="@android:color/black"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextstyle"
+            android:hint="Enter Your OTP"
+            android:visibility="invisible"
+            android:layout_height="60dp" />
+        <EditText
+            android:layout_width="300dp"
+            android:textColorHint="@android:color/black"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:id="@+id/password"
+            android:hint="        Enter Password"
+            android:background="@drawable/edittextstyle"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/validateotp"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttonstateselector"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/userpassub"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/buttonstateselector"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

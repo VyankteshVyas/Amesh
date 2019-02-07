@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newuserrelativelayout"
+
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Welcome"
+        android:weightSum="2"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.75"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Good Morning Admin"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Last Login"
+                android:id="@+id/lastlogin"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_power_settings_new_black_24dp"
+            android:id="@+id/logout"
+            android:layout_height="50dp"
+
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/party"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Welcome"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/Partynameedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Party Name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/party"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Addressedit"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:textAlignment="center"
+
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partyty"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/mobilenumber"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Mobileedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:textAlignment="center"
+
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Pannoedit"
+                    android:layout_width="0dp"
+                    android:focusable="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="PAN"
+                    android:inputType="text"
+                    android:textAlignment="center"
+
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bankna"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/partyty"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextstyle"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/Banknameedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="Bank Name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bankba"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/bankna"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextstyle"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/BankBranchedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="Bank Branch"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/bankba"
+                android:layout_marginTop="5dp"
+
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/AccountNoedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Account No."
+                    android:inputType="text"
+                    android:textAlignment="center"
+
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/IFSCcodeedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="IFSC"
+                    android:inputType="textShortMessage"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accna"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/accno"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextstyle"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/Accountnameedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="Account Name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+    <TextView
+        android:id="@+id/automaticPassword"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="40dp"
+        android:layout_below="@id/date"
+        android:background="@android:color/transparent"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/ifscccc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/accna"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextstyle"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Remarksedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="Remarks"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/ifscccc"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/Typespinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:entries="@array/spinneritems"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/Entrydateedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Entry Date"
+                    android:inputType="date"
+
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+    <TextView
+        android:id="@+id/Submit"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/addoredit"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/buttonstateselector"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/addoredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:linksClickable="true"
+        android:textSize="18sp"
+        android:autoLink="phone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@android:color/holo_blue_bright"
+        android:layout_centerHorizontal="true"
+        android:text="Edit group" />
+
+
+</RelativeLayout>

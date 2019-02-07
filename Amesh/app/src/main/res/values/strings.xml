@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Amesh</string>
+    <array name="spinneritems">
+        <item>Investor</item>
+        <item>Reciever</item>
+    </array>
+    <array name="Modes">
+        <item>Select Mode</item>
+        <item>Cheque</item>
+        <item>Online</item>
+
+    </array>
+    <array name="searchway">
+        <item>Investor</item>
+        <item>Reciever</item>
+        <item>Entry Date</item>
+        <item>Maturity Date</item>
+        <item>Amount</item>
+        <item>Rate of Intrest</item>
+    </array>
+
+</resources>

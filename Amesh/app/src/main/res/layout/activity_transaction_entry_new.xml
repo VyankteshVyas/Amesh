@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionEntryNew">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rellayout"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/toolb"
+                app:subtitleTextColor="@android:color/white"
+                app:titleTextColor="@android:color/white">
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/appbar"
+            android:visibility="invisible"
+            android:layout_marginBottom="10dp"
+            android:layout_height="20dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/progressBar2"
+            android:id="@+id/investortextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/investoredit"
+                android:layout_width="226dp"
+                android:layout_height="52dp"
+                android:layout_below="@id/progressBar2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Investor"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/investortextinputlayout"
+            android:id="@+id/recievertextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/recieveredit"
+                android:layout_width="274dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/edittextstyle"
+                android:hint="Reciever"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:weightSum="2"
+            android:id="@+id/dates"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recievertextinputlayout"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_below="@id/recievertextinputlayout"
+                android:id="@+id/Entrydateedittextinputlayout"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="274dp"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:layout_height="50dp"
+                    android:hint="Entry Date"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittextstyle"
+                    android:layout_below="@id/recievertextinputlayout"
+                    android:layout_marginBottom="10dp"
+
+                    android:id="@+id/Entrydateedit" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_below="@id/Entrydateedittextinputlayout"
+                android:id="@+id/Maturitydateedittextinputlayout"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="274dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittextstyle"
+                    android:layout_below="@id/Entrydateedit"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Maturity Date"
+                    android:id="@+id/Maturitydateedit" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/dates"
+            android:id="@+id/amountdittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="274dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="Amount"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/Maturitydateedit"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/amountdit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/amountdittextinputlayout"
+            android:id="@+id/roidittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ROIedit"
+                android:layout_width="274dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/amountdittextinputlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="R.O.I"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/roidittextinputlayout"
+            android:id="@+id/intrestedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="274dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/roidittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:hint="Intrest"
+                android:id="@+id/intrestedit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/intrestedittextinputlayout"
+            android:id="@+id/TDSedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="274dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:hint="tds"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/intrestedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/TDSedit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/TDSedittextinputlayout"
+            android:id="@+id/spinnermodetextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinnermode"
+                android:layout_width="274dp"
+
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+
+                android:layout_below="@id/TDSedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/Modes">
+            </Spinner>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/spinnermodetextinputlayout"
+            android:id="@+id/Chequenoedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="274dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/spinnermode"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Cheque No."
+                android:id="@+id/Chequenoedit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/Chequenoedittextinputlayout"
+            android:id="@+id/Chequedateedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="274dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/Chequenoedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:hint="Cheque Date"
+                android:textSize="18sp"
+                android:id="@+id/Chequedateedit" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/Chequedateedittextinputlayout"
+            android:id="@+id/Bankedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="274dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/Chequedateedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:hint="Bank"
+                android:inputType="text"
+                android:id="@+id/Bankedit" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/Bankedittextinputlayout"
+            android:id="@+id/Branchedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="274dp"
+
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/Bankedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:hint="Branch"
+                android:inputType="text"
+                android:id="@+id/Branchedit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/Branchedittextinputlayout"
+            android:id="@+id/Brokerageedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_width="274dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/Branchedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="Brokerage"
+                android:id="@+id/Brokerageedit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/Brokerageedittextinputlayout"
+            android:id="@+id/TDSBrokerageeditedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="274dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/Brokerageedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:hint="tds Brokerage"
+                android:inputType="number"
+                android:id="@+id/TDSBrokerageedit" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/TDSBrokerageeditedittextinputlayout"
+            android:id="@+id/Remarksedittextinputlayout"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/colorPrimaryDark"
+
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_width="274dp"
+
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittextstyle"
+                android:layout_below="@id/TDSBrokerageeditedittextinputlayout"
+                android:layout_marginBottom="10dp"
+                android:hint="Remarks"
+                android:inputType="text"
+                android:id="@+id/Remarksedit" />
+
+        </android.support.design.widget.TextInputLayout>
+        <ToggleButton
+            android:layout_width="274dp"
+            android:textOn="Visible"
+            android:checked="true"
+            android:id="@+id/togglehidden"
+            android:layout_centerHorizontal="true"
+            android:textOff="Hidden"
+            android:enabled="true"
+
+            android:layout_below="@+id/Remarksedittextinputlayout"
+            android:layout_height="50dp" />
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:weightSum="2"-->
+        <!--android:id="@+id/a17"-->
+        <!--android:layout_below="@id/a16"-->
+        <!--android:layout_height="100dp">-->
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Cheque No."-->
+        <!--android:id="@+id/ChequeNo."-->
+        <!--android:layout_height="match_parent" />-->
+        <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/ChequeNo.edit"-->
+        <!--android:layout_height="match_parent" />-->
+        <!--</LinearLayout>-->
+
+        <Button
+            android:id="@+id/submittransactiontofirebase"
+            android:layout_width="174dp"
+            android:layout_height="42dp"
+            android:layout_below="@id/togglehidden"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonstyle"
+
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+    <!--    android:gravity="center_horizontal" -->

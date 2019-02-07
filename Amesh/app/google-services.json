@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "803579085288",
+    "firebase_url": "https://amesh-e678e.firebaseio.com",
+    "project_id": "amesh-e678e",
+    "storage_bucket": "amesh-e678e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803579085288:android:ed1fec1b5ad3922e",
+        "android_client_info": {
+          "package_name": "com.example.vyanktesh.amesh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803579085288-0o9la3leoj2m6r3m3ggljudo18tgd3iv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vyanktesh.amesh",
+            "certificate_hash": "3f2221ee0df8552b8a7a1857e59625477d72b681"
+          }
+        },
+        {
+          "client_id": "803579085288-fvaf4do5om6ol8biboph8uof2sh3gbqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRYLU91aCmPT2VyIvhUs91fF3C39twiqc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803579085288-fvaf4do5om6ol8biboph8uof2sh3gbqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

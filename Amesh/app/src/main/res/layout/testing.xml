@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".TransactionEntryNew">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rellayout"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/toolb"
+                app:subtitleTextColor="@android:color/white"
+                app:titleTextColor="@android:color/white">
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/appbar"
+            android:visibility="invisible"
+            android:layout_marginBottom="5dp"
+            android:layout_height="5dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/progressBar2"
+            android:id="@+id/investortextinputlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/investoredit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+
+                android:background="@drawable/edittextstyle"
+                android:hint="Investor"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/investortextinputlayout"
+            android:id="@+id/recievertextinputlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_height="52dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/recieveredit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+
+                android:background="@drawable/edittextstyle"
+                android:hint="Reciever"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/recievertextinputlayout"
+            android:orientation="horizontal"
+            android:layout_height="52dp">
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="0dp"
+               android:layout_marginRight="2dp"
+               android:layout_weight="1"
+               android:id="@+id/Entrydateedittextinputlayout"
+               android:layout_height="match_parent">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:id="@+id/Entrydateedit"
+                   android:hint="Entry Date"
+                   android:textSize="18sp"
+                   android:textAlignment="center"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:background="@drawable/edittextstyle"
+                   android:layout_height="match_parent" />
+
+           </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/amountdittextinputlayout"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/Maturitydateedit"
+                    android:hint="Maturity Date"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:background="@drawable/edittextstyle"
+                    android:layout_height="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/colorPrimaryDark"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/groupnameadmin"
+            android:text="Aman Bhawasar"
+            android:paddingTop="5dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/gorupmobi"
+            android:paddingTop="1dp"
+            android:layout_marginLeft="15dp"
+
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            android:text="7869909404"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/black"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/messagecontent"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:scrollbars="horizontal"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

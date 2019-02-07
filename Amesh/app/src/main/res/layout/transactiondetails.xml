@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parta"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Party Name"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Partadate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v1"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/parta"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v1"
+        android:id="@+id/entra"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Start Date"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/entradate"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v2"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/entra"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v2"
+        android:id="@+id/marta"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Maturity Date"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/martadate"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v3"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/marta"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v3"
+        android:id="@+id/amounta"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Amount"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/amountaedit"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v4"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/amounta"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v4"
+        android:id="@+id/roia"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="R.O.I"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/roiaedit"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v5"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/roia"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v5"
+        android:id="@+id/tdsa"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="tds"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tdsaedit"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v6"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tdsa"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v6"
+        android:id="@+id/intrestamounta"
+        android:weightSum="2"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Intrest Amount"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/intrestamountaedit"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v7"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/intrestamounta"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v7"
+        android:id="@+id/Intrestchecka"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Intrest Cheque No."
+            android:textColor="@color/textcolor1"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/intrestchequenoaedit"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v8"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/Intrestchecka"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v8"
+        android:id="@+id/chequedatea"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Cheque Date"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/chequedateaedit"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v9"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/chequedatea"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/v9"
+        android:id="@+id/buttonset"
+        android:weightSum="2"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="View History"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/viewhistoriya"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/sharea"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:text="Upload"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
